@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'countach';
+  src: url('../public/Countach-Font/countachweb-bold-TRIAL-BF63c5f210ac40c.woff');
+  src: url('../public/Countach-Font/countachweb-italic-TRIAL-BF63c5f210ed576.woff');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'alfont';
+    src: url('../public/fonts/alfont.otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary: rebeccapurple;
+  --secondary: cornflowerblue;
+
+}
+
+.arabic{
+  font-family: 'alfont';
+}
+
+.english{
+  font-family: 'countach';
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
